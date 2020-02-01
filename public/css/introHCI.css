@@ -1,0 +1,76 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/lorempixel.jumbotron.jpeg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.class a {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#course1 {
+    margin-top: 25px;
+}
+
+.titles {
+    margin-left: 3.5px;
+}
+
+.subtitles {
+    margin-left: 3.5px;
+    margin-top: 30px;
+}
+
+.video {
+    margin-top: 8%;
+}
+
+.videoPreview {
+    width: 45%;
+    align: left;
+    border: #cfcfcf 1.25px solid;
+    border-radius: 3px;
+}
+
+.videoDescription p{
+    width: 50%;
+    float: right;
+    padding-left: 3%;
+}
+
+
+
+
+
+
+
+
+

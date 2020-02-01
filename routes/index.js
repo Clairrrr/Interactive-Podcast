@@ -1,0 +1,60 @@
+
+/*
+ * GET home page.
+ */
+
+exports.view = function(req, res){
+  res.render('index',{
+  	"courses" : [
+  	    { 'name': 'CSE 120',
+        'image': 'lorempixel.people.1.jpeg',
+        'id': 'course1'
+      },
+      { 'name': 'CSE 130',
+        'image': 'lorempixel.city.1.jpeg',
+        'id': 'course2'
+      },
+      { 'name': 'CSE 167',
+        'image': 'lorempixel.technics.1.jpeg',
+        'id': 'course3'
+      },
+      { 'name': 'CSE 170',
+        'image': 'lorempixel.abstract.1.jpeg',
+        'id': 'course4'
+      },
+      { 'name': 'CSE 291',
+        'image': 'lorempixel.abstract.8.jpeg',
+        'id': 'course5'
+      },
+  	],
+      "videos" : [
+          { 'name': 'CSE 120',
+              'image': 'podcastView1.png',
+              'id': 'video1',
+              'description': 'Week 4 Lecture 6',
+              'length': '50:05',
+          },
+          { 'name': 'CSE 130',
+              'image': 'podcastView2.png',
+              'id': 'video2',
+              'description': 'Week 3 Lecture 4',
+              'length': '47:45',
+          },
+          { 'name': 'CSE 167',
+              'image': 'podcastView3.png',
+              'id': 'video3',
+              'description': 'Week 4 Lecture 5',
+              'length': '53:15',
+          },
+          { 'name': 'CSE 170',
+              'image': 'podcastView4.png',
+              'id': 'video4',
+              'description': 'Week 5 Lecture 6',
+              'length': '49:06',
+          },
+      ]
+  });
+};
+
+
+
