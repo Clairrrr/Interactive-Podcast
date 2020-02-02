@@ -19,16 +19,24 @@
 	<!-- this is a comment in HTML -->
 	<div class="container">
 		<div class="jumbotron">
-  			<h1>{{courseName}}</h1>
+		    <h1 class="videoTitle">{{courseName}}</h1>
+  			<p class="videoTitle">{{lecture}}</p>
 		</div>
-		<div>
-		{{#each weeks}}
-            <p class="weeks">{{name}}</p>
-            <a href="{{courseName}}/{{name}}/{{lecture1}}" class="lectures">{{lecture1}}</a><br>
-            <a href="{{courseName}}/{{name}}/{{lecture2}}" class="lectures">{{lecture2}}</a>
-		{{/each}}
-		</div>
-    <br>
+
+    <div>
+        <iframe class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+        <div class="input">
+            <input type="text" class="inputBox" placeholder="Add notes here...">
+            <input type="submit" value="Add" class="submit">
+        <div>
+    </div>
+    <h3 id="noteTitle">Notes</h3>
+    <div id="notesdiv">
+        {{#each notes}}
+            <a href="" class="note">
+            <p id="content">{{content}}</p> <p id="timestamp">{{timestamp}}</p></a><br>
+        {{/each}}
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>

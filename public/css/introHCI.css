@@ -1,33 +1,40 @@
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
-	margin-top: 2em;
+    margin-top: 2em;
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+    /* Colors are in hexadecimal: http://www.colorpicker.com/ */
+    color: #CC00AA;
 }
 
 .jumbotron {
-	position: relative;
-	background: none;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+    padding-left: 2px;
+    background: none;
 }
 
 .jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
+    content:"";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.jumbotron h1 {
+    font-size: xx-large;
 }
 
 .jumbotron p {
-     color: #6e6e6e;
+    color: #6e6e6e;
+    font-size: medium;
 }
 
 .class a {
@@ -66,11 +73,60 @@
     padding-left: 3%;
 }
 
+.podcastVideo {
+    width: 100%;
+}
 
+.weeks {
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 4%;
+}
 
+.lectures {
+    margin-left: 10%;
+    line-height: 2;
+}
 
+.videoTitle {
+}
 
+.inputBox {
+    width: 85%;
+    padding-left: 2.5%;
+    padding-top: 1.2%;
+}
 
+.submit {
+    width: 12%;
+    border:aliceblue;
+    height: 27px;
+    border-radius:3px;
+}
 
+.input {
+    height: 37px;
+    border: #cfcfcf solid 1.5px;
+}
 
+.note {
+    font-weight: bold;
+}
 
+#notesdiv {
+    line-height: 2.3;
+}
+
+#content {
+    float: left;
+    width: 50%;
+}
+
+#timestamp {
+    float: right;
+    width: 13%;
+}
+
+#noteTitle {
+    margin-top: 28px;
+}
