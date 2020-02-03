@@ -6,25 +6,35 @@
 exports.view = function(req, res){
   res.render('index',{
   	"courses" : [
-  	    { 'name': 'CSE 120',
+  	    { 'name': 'CSE 120-Principles of Computer Operating Systems-LE[A00]',
         'image': 'lorempixel.people.1.jpeg',
-        'id': 'course1'
+        'id': 'course1',
+            'prof': 'Pasquale, Joseph',
+            'quarter': 'WI2020',
       },
-      { 'name': 'CSE 130',
+      { 'name': 'CSE 130-Programming Languages: Principles and Paradigms-LE[B00]',
         'image': 'lorempixel.city.1.jpeg',
-        'id': 'course2'
+        'id': 'course2',
+          'prof': 'Jhala, Ranjit',
+          'quarter': 'WI2020',
       },
-      { 'name': 'CSE 167',
+      { 'name': 'CSE 167-Computer Graphics-LE[A00]',
         'image': 'lorempixel.technics.1.jpeg',
-        'id': 'course3'
+        'id': 'course3',
+          'prof': 'Ochoa, Benjamin Lawrence',
+          'quarter': 'WI2020',
       },
-      { 'name': 'CSE 170',
+      { 'name': 'CSE 170-Interaction Design-LE[A00]',
         'image': 'lorempixel.abstract.1.jpeg',
-        'id': 'course4'
+        'id': 'course4',
+          'prof': 'Klemmer, Scott R',
+          'quarter': 'WI2020',
       },
-      { 'name': 'CSE 291',
+      { 'name': 'CSE 291-Topics in Computer Science and Engineering-LE[C00]',
         'image': 'lorempixel.abstract.8.jpeg',
-        'id': 'course5'
+        'id': 'course5',
+          'prof': 'Sicun, Gao',
+          'quarter': 'WI2020',
       },
   	],
       "videos" : [

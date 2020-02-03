@@ -9,6 +9,10 @@
     color: #CC00AA;
 }
 
+body {
+    margin-top: 6%;
+}
+
 .jumbotron {
     position: relative;
     padding-top: 2px;
@@ -28,13 +32,9 @@
     position: absolute;
     z-index: -1;
 }
+
 .jumbotron h1 {
     font-size: xx-large;
-}
-
-.jumbotron p {
-    color: #6e6e6e;
-    font-size: medium;
 }
 
 .class a {
@@ -47,13 +47,16 @@
     margin-top: 25px;
 }
 
-.titles {
-    margin-left: 3.5px;
+.title {
+    font-weight: bold;
+    width: 100%;
+    font-size: 95%;
 }
 
-.subtitles {
+.subtitle {
     margin-left: 3.5px;
-    margin-top: 30px;
+    font-size: 80%;
+    font-weight: bold;
 }
 
 .video {
@@ -88,9 +91,6 @@
     line-height: 2;
 }
 
-.videoTitle {
-}
-
 .inputBox {
     width: 85%;
     padding-left: 2.5%;
@@ -100,13 +100,15 @@
 .submit {
     width: 12%;
     border:aliceblue;
-    height: 27px;
-    border-radius:3px;
+    height: 2.5em;
+    border-radius:6px;
+    margin-top: 1%;
 }
 
 .input {
-    height: 37px;
+    height: 3em;
     border: #cfcfcf solid 1.5px;
+    border-radius:6px;
 }
 
 .note {
@@ -129,4 +131,12 @@
 
 #noteTitle {
     margin-top: 28px;
+}
+
+.info {
+    font-size: 70%;
+}
+
+#frame {
+
 }

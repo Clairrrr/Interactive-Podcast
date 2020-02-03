@@ -19,13 +19,13 @@
 	<!-- this is a comment in HTML -->
 	<div class="container">
 		<div class="jumbotron">
-  			<h1>{{courseName}}</h1>
+  			<p class="title">{{courseName}}</p>
 		</div>
 		<div>
 		{{#each weeks}}
             <p class="weeks">{{name}}</p>
-            <a href="{{courseName}}/{{name}}/{{lecture1}}" class="lectures">{{lecture1}}</a><br>
-            <a href="{{courseName}}/{{name}}/{{lecture2}}" class="lectures">{{lecture2}}</a>
+            <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
+            <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
 		{{/each}}
 		</div>
     <br>
