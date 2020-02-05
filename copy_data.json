@@ -1,0 +1,81 @@
+{
+  "courses" : [
+    { "name": "CSE 120-Principles of Computer Operating Systems-LE[A00]",
+      "image": "lorempixel.people.1.jpeg",
+      "id": "course1",
+      "prof": "Pasquale, Joseph",
+      "quarter": "WI2020"
+    },
+    { "name": "CSE 130-Programming Languages: Principles and Paradigms-LE[B00]",
+      "image": "lorempixel.city.1.jpeg",
+      "id": "course2",
+      "prof": "Jhala, Ranjit",
+      "quarter": "WI2020"
+    },
+    { "name": "CSE 167-Computer Graphics-LE[A00]",
+      "image": "lorempixel.technics.1.jpeg",
+      "id": "course3",
+      "prof": "Ochoa, Benjamin Lawrence",
+      "quarter": "WI2020"
+    },
+    { "name": "CSE 170-Interaction Design-LE[A00]",
+      "image": "lorempixel.abstract.1.jpeg",
+      "id": "course4",
+      "prof": "Klemmer, Scott R",
+      "quarter": "WI2020"
+    },
+    { "name": "CSE 291-Topics in Computer Science and Engineering-LE[C00]",
+      "image": "lorempixel.abstract.8.jpeg",
+      "id": "course5",
+      "prof": "Sicun, Gao",
+      "quarter": "WI2020"
+    }
+  ],
+  "videos" : [
+    { "name": "CSE 120",
+      "image": "podcastView1.png",
+      "id": "video1",
+      "description": "Week 4 Lecture 6",
+      "length": "50:05"
+    },
+    { "name": "CSE 130",
+      "image": "podcastView2.png",
+      "id": "video2",
+      "description": "Week 3 Lecture 4",
+      "length": "47:45"
+    },
+    { "name": "CSE 167",
+      "image": "podcastView3.png",
+      "id": "video3",
+      "description": "Week 4 Lecture 5",
+      "length": "53:15"
+    },
+    { "name": "CSE 170",
+      "image": "podcastView4.png",
+      "id": "video4",
+      "description": "Week 5 Lecture 6",
+      "length": "49:06"
+    }
+  ],
+  "notes": [
+    {
+      "content": "Introduction",
+      "timestamp": "02:30"
+    },
+    {
+      "content": "Problem statement",
+      "timestamp": "11:25"
+    },
+    {
+      "content": "Solution",
+      "timestamp": "25:09"
+    },
+    {
+      "content": "Proof of runtime",
+      "timestamp": "34:58"
+    },
+    {
+      "content": "Further reading",
+      "timestamp": "47:12"
+    }
+  ]}

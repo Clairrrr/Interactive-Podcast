@@ -13,9 +13,9 @@ exports.addNote = function (req, res) {
     var note = req.query.note;
     data.notes.push({
         "content": note,
-        "timestamp": "testTime"
+        "timestamp": "60:01",
     });
-    fs.writeFile("../data.json", "HELLO", function (err) {
+    fs.writeFile("data.json", JSON.stringify(data), function (err) {
         if(err) {console.log("error: "+err); return;}
         console.log("finish writing to file");
     });
