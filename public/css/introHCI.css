@@ -133,6 +133,8 @@ body {
 
 .note {
     font-weight: bold;
+    float: left;
+    width: 90%;
 }
 
 #notesdiv {
@@ -141,12 +143,11 @@ body {
 
 #content {
     float: left;
-    width: 50%;
 }
 
 #timestamp {
     float: right;
-    width: 13%;
+    width: 12%;
 }
 
 #noteTitle {
@@ -172,4 +173,9 @@ body {
     padding-left: 1em;
     box-shadow: 0em 0.2em 0.7em #cfcfcf;
     vertical-align:baseline;
+}
+
+.deleteNote {
+    float: right;
+    padding-right: 0.7em;
 }

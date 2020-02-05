@@ -7,6 +7,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/introHCI.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,16 +26,18 @@
 		</div>
     <div id="frame">
         <iframe class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-        <div class="input">
-            <input type="text" class="inputBox" placeholder="Add notes here...">
+        <form class="input" role="form" method="get" action="/addNote/{{courseName}}/{{prof}}/{{quarter}}/{{lecture}}">
+            <input type="text" class="inputBox" placeholder="Add notes here..." name="note">
             <input type="submit" value="Add" class="submit">
-        <div>
+        </form>
     </div>
     <h3 id="noteTitle">Notes</h3>
     <div id="notesdiv">
         {{#each notes}}
             <a href="" class="note">
-            <p id="content">{{content}}</p> <p id="timestamp">{{timestamp}}</p></a><br>
+            <p id="content">{{content}} </p> <p id="timestamp">{{timestamp}}</p></a>
+            <a href="#" class="deleteNote"><i class="fa fa-trash"></i></a>
+            <br>
         {{/each}}
     </div>
 

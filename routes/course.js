@@ -1,3 +1,4 @@
+var data = require('../data');
 
 exports.viewCourse = function(req, res) { 
   // controller code goes here 
@@ -100,34 +101,14 @@ exports.viewLecture = function(req, res) {
     var week = req.params.week;
     var lecture = req.params.lecture;
     console.log("in view, prof is "+professor);
-    res.render('lecture', {
+    var newData = {
         "prof": professor,
         "quarter": quarter,
         "courseName": name,
         "week": week,
         "lecture": lecture,
-        "notes": [
-            {
-                "content": "Introduction",
-                "timestamp": "02:30",
-            },
-            {
-                "content": "Problem statement",
-                "timestamp": "11:25",
-            },
-            {
-                "content": "Solution",
-                "timestamp": "25:09",
-            },
-            {
-                "content": "Proof of runtime",
-                "timestamp": "34:58",
-            },
-            {
-                "content": "Further reading",
-                "timestamp": "47:12",
-            },
-        ]
-    });
+        "notes": data.notes
+    };
+    res.render('lecture', newData);
 };
 
