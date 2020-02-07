@@ -1,19 +1,21 @@
 {
-  "name": "170_project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "Interactive Podcast",
+  "version": "0.0.1",
+  "author": "Manxue Li",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Clairrrr/170_project.git"
+    "url": "https://github.com/Clairrrr/Interactive-Podcast"
   },
-  "author": "Clair Li",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Clairrrr/170_project/issues"
+  "license": "",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
   },
-  "homepage": "https://github.com/Clairrrr/170_project#readme"
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
 }
