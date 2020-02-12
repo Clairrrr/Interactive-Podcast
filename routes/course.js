@@ -94,13 +94,11 @@ exports.viewCourse = function(req, res) { 
 };
 
 exports.viewLecture = function(req, res) {
-    console.log("in view lecture");
     var name = req.params.courseName;
     var professor = req.params.prof;
     var quarter = req.params.quarter;
     var week = req.params.week;
     var lecture = req.params.lecture;
-    console.log("in view, prof is "+professor);
     var newData = {
         "prof": professor,
         "quarter": quarter,

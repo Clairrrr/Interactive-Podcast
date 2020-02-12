@@ -17,7 +17,7 @@ var lecture = require('./routes/lecture');
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
@@ -37,9 +37,10 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/course/:name/:quarter/:prof', course.viewCourse);
-app.get('/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
+app.get('/', index.login);
+app.get('/home/:name', index.home);
+app.get('/home/course/:name/:quarter/:prof', course.viewCourse);
+app.get('/home/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
 app.get('/addNote/:courseName/:prof/:quarter/:lecture', lecture.addNote);
 
 // Example route
