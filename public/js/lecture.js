@@ -17,8 +17,7 @@ $(document).ready(function() {
 
 function initializePage() {
     console.log("B");
-    $("#addNoteForm").submit(handleAddNote);
-    $(".note a").click(handleResume);
+    $("#addNoteForm").submit(handleAddNote);;
 };
 
 function handleAddNote(e) {
@@ -30,10 +29,8 @@ function handleAddNote(e) {
         success: function(res){
             console.log(`form submitted. ${res} end`);
             let vid = document.getElementById("videoID");
-            let time = vid.currentTime;
-            // alert("time: "+time);
+            let time = Math.floor(vid.currentTime);
             $("#notesdiv").append(generateHTML(res, time));
-            console.log("time is "+time);
         }
     });
     e.preventDefault();
@@ -41,17 +38,14 @@ function handleAddNote(e) {
 };
 
 function generateHTML(note, time) {
-    let a1 = `<a href="" class="note"><p id="content">${note}</p>`;
-    let a2 = `<p id="timestamp">${time}</p></a>`;
-    let a3 = `<a href="#" class="deleteNote"><i class="fa fa-trash"></i></a><br>`;
+    let a1 = `<div class="note"><p id="content">${note}</p><a href="javascript:void(0);">`;
+    let a2 = `<p onclick="handleResume(this)" id="timestamp">${time}</p></a>`;
+    let a3 = `<a href="#" class="deleteNote"><i class="fa fa-trash"></i></a><br></div>`;
     return a1 + a2 + a3;
 }
 
 function handleResume(e) {
-    console.log("inside resume");
-    alert("in resume");
     let vid = document.getElementById("videoID");
-    vid.currentTime = $("#timestamp").text;
-    alert("finish setting");
-    e.preventDefault();
+    let time = e.innerHTML;
+    vid.currentTime = time;
 }
