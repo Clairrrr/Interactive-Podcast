@@ -19,13 +19,19 @@
 <body>
 	<div class="container">
 		<h1 id="course_title">Login</h1>
-        <div class="fb-login">
-            <fb:login-button auto_logout_link="true" scope="public_profile, email" onlogin="checkLoginState()">
-            </fb:login-button>
-        </div>
+<!--        <div class="fb-login">-->
+<!--            <fb:login-button auto_logout_link="true" scope="public_profile, email" onlogin="checkLoginState()">-->
+<!--            </fb:login-button>-->
+<!--        </div>-->
+        <button type="button" onclick="handleLogin()"> Login </button>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+    <script>
+        function handleLogin() {
+            window.location.href = `http://localhost:3000/home/Clair Li`;
+        }
+    </script>
 </body>
 </html>
