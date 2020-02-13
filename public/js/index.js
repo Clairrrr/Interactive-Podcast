@@ -20,9 +20,9 @@ function handleLogin(e) {
 		data: $("#loginForm").serialize(),
 		success: function (res) {
 			try {
-				window.location.href = `http://localhost:3000/home/${res}`;
-			}catch (e) {
 				window.location.href = `https://interactive-podcast.herokuapp.com/home/${res}`;
+			}catch (e) {
+				window.location.href = `http://localhost:3000/home/${res}`;
 			}
 		},
 	});
