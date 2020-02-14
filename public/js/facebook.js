@@ -11,5 +11,5 @@ function statusChangeCallback(res) {
 }
 
 function loginUser(res) {
-    window.location.href = `http://localhost:3000/home/${res.name}`;
+    window.location.href = `home/${res.name}`;
 }
