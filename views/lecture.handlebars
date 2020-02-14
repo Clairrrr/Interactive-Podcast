@@ -27,13 +27,21 @@
   			<p class="subtitle">{{lecture}}</p>
 		</div>
         <div id="player"></div>
-    <div id="frame">
-<!--        <iframe id="videoID" class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>-->
-        <video id="videoID" width="320" height="240" controls>
-            <source src="/../images/mov_bbb.mp4" type="video/mp4">
-            <source src="/../images/mov_bbb.mp4" type="video/ogg">
-<!--            Your browser does not support the video tag.-->
-        </video><br>
+
+
+          <div id="frame">
+      <!--<iframe id="videoID" class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>-->
+       <video id="videoID" width="100%" controls>
+                  <source src="/../images/mov_bbb.mp4" type="video/mp4">
+                  <source src="/../images/mov_bbb.mp4" type="video/ogg">
+         <!--Your browser does not support the video tag.-->
+           </video><br>
+
+
+
+
+
+
         <form id="addNoteForm" class="input" role="form" method="get"
               action="/addNote/{{courseName}}/{{prof}}/{{quarter}}/{{lecture}}">
             <input type="text" class="inputBox" placeholder="Add notes here..." name="note">
@@ -45,7 +53,7 @@
         {{#each notes}}
             <div class="note">
             <p id="content">{{content}} </p><a href="javascript:void(0);">
-            <p onclick="handleResume(this)" id="timestamp">{{timestamp}}</p></a>
+            <p onclick="handleResume(this)" id="timestamp">{{timestamp}}s</p></a>
             <a href="#" class="deleteNote"><i class="fa fa-trash"></i></a>
             <br> </div>
         {{/each}}
