@@ -1,14 +1,3 @@
-// $(document).ready(function() {
-//     console.log("B");
-//     initializePage();
-// });
-//
-// function initializePage() {
-//     $('.note').click((e) => {alert("yo")});
-//     console.log("A");
-//     // $('#colorBtn').click(randomizeColors);
-// }
-
 'use strict';
 $(document).ready(function() {
     initializePage();
