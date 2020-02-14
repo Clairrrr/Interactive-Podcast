@@ -1,4 +1,4 @@
-ƒc/* applies to anything of class "example-class-selector" */
+/* applies to anything of class "example-class-selector" */
 .example-class-selector {
     margin-top: 2em;
 }
@@ -42,15 +42,12 @@ body {
     font-size: xx-large;
 }
 
-
-/*For the box of teh course*/
 .class a {
     text-align: left;
     padding-top: 15px;
     padding-left: 15px;
     border-radius: 12px;
     box-shadow: 0px 10px 30px rgba(70, 70, 70, 0.26);
-    border-style: hidden;
 }
 
 #course1 {
@@ -62,13 +59,14 @@ body {
 }
 
 #course_subtitle1 {
-    margin-top: 6%;
-    font-weight: 700;
+    padding-top: 35%;
 }
 
 #course_subtitle2 {
     margin-top: 15%;
     font-weight: 700;
+    float: left;
+    text-align: left
 }
 
 .title {
@@ -176,7 +174,7 @@ body {
     height: 3em;
     padding-top:0.5em;
     padding-left: 1em;
-    box-shadow: 0em 0.2em 0.7em #cfcfcf;
+    box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.26);
     vertical-align:baseline;
 }
 
@@ -185,12 +183,3 @@ body {
     padding-right: 0.7em;
 }
 
-.user_info {
-
-}
-
-.tight_text{
-    padding: 2px;
-    width: 100%;
-
-}
