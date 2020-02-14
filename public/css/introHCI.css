@@ -53,13 +53,17 @@ body {
 #course1 {
 }
 
-#course_title {
-    /*text-align: center;*/
+#course_title1 {
     float: left;
 }
 
+#course_title2 {
+    float: left;
+    margin-right: 60%;
+}
+
 #course_subtitle1 {
-    padding-top: 35%;
+    padding-top: 20%;
 }
 
 #course_subtitle2 {
@@ -88,15 +92,17 @@ body {
 
 .videoPreview {
     width: 45%;
-    align: left;
     border: #cfcfcf 1.25px solid;
     border-radius: 6px;
 }
 
 .videoDescription p{
-    width: 50%;
-    float: right;
-    padding-left: 3%;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.video {
+    width: 45em
 }
 
 .podcastVideo {
@@ -183,3 +189,6 @@ body {
     padding-right: 0.7em;
 }
 
+.recently_viewed {
+    margin-top: 40%;
+}\
