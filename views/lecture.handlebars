@@ -26,10 +26,8 @@
 		    <p class="info"> Professor {{prof}} | {{quarter}}</p>
   			<p class="subtitle">{{lecture}}</p>
 		</div>
-        <div id="player"></div>
 
-
-          <div id="frame">
+    <div id="frame">
       <!--<iframe id="videoID" class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>-->
        <video id="videoID" width="100%" controls>
                   <source src="/../images/mov_bbb.mp4" type="video/mp4">
@@ -47,22 +45,18 @@
     <div id="notesdiv">
         {{#each notes}}
             <div class="note">
-            <p id="content">{{content}} </p><a href="javascript:void(0);">
-            <p onclick="handleResume(this)" id="timestamp">{{timestamp}}</p></a>
-            <a href="#" class="deleteNote"><i class="fa fa-trash"></i></a>
+            <p id="content">{{@key}} </p><a href="javascript:void(0);">
+            <p onclick="handleResume(this)" id="timestamp">{{this}}</p></a>
+            <a href="javascript:void(0);" class="deleteNote" onclick="handleDelete(this, `{{@key}}`)">
+                <i class="fa fa-trash"></i>
+            </a>
             <br> </div>
         {{/each}}
     </div>
-
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
-<!--        <script>-->
-<!--            function handleAddNote(){-->
-<!--                console.log("submit!");-->
-<!--                alert("what's up");-->
-<!--            }-->
-<!--        </script>-->
   </body>
 </html>

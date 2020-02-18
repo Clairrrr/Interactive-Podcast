@@ -42,7 +42,8 @@ app.get('/home', index.home_login);
 app.get('/home/:name', index.home);
 app.get('/home/course/:name/:quarter/:prof', course.viewCourse);
 app.get('/home/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
-app.get('/addNote/:courseName/:prof/:quarter/:lecture', lecture.addNote);
+app.get('/addNote/:courseName/:prof/:quarter/:lecture/:time', lecture.addNote);
+app.get('/deleteNote/:content', lecture.deleteNote);
 
 // Example route
 // app.get('/users', user.list);
