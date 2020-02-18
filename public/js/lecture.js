@@ -25,7 +25,6 @@ function handleAddNote(e) {
     });
     e.preventDefault();
     window.location.reload(false);
-    console.log(`inside handleAddNote, note is ${e}`);
 };
 
 function generateHTML(note, time) {
