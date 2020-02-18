@@ -6,24 +6,25 @@ $(document).ready(function() {
 
 function initializePage() {
     console.log("B");
-    $("#addNoteForm").submit(handleAddNote);;
+    $("#addNoteForm").submit(handleAddNote);
+    // $("#deleteNote").submit(handleDelete());
 };
 
 function handleAddNote(e) {
     e.preventDefault();
+    var vid = document.getElementById("videoID");
+    var time = new Date(vid.currentTime * 1000).toISOString().substr(11, 8);
     $.ajax({
-        url: $('#addNoteForm').attr('action'),
+        url: $('#addNoteForm').attr('action')+'/'+time,
         type: 'get',
         data : $('#addNoteForm').serialize(),
         success: function(res){
             console.log(`form submitted. ${res} end`);
-            let vid = document.getElementById("videoID");
-            let time = Math.floor(vid.currentTime);
             $("#notesdiv").append(generateHTML(res, time));
         }
     });
     e.preventDefault();
-    console.log(`inside handleAddNote, note is ${e}`);
+    window.location.reload(false);
 };
 
 function generateHTML(note, time) {
@@ -36,5 +37,11 @@ function generateHTML(note, time) {
 function handleResume(e) {
     let vid = document.getElementById("videoID");
     let time = e.innerHTML;
-    vid.currentTime = time;
+    time = time.split(":");
+    vid.currentTime = parseInt(time[0])*3600 + parseInt(time[1])*60 + parseInt(time[2]);
+}
+
+function handleDelete(e, cont) {
+    $.get(`/deleteNote/${cont}`);
+    window.location.reload(false);
 }
