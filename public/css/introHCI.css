@@ -13,13 +13,8 @@
 #backbutton { 
 margin: 0px 15px;
     position: absolute;
-    width: 45px;
-    height: 25px;
     font-family: Roboto;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 21px;
-    line-height: 25px;
+    
 }
 
 
