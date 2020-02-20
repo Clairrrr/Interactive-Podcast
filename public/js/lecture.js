@@ -45,3 +45,7 @@ function handleDelete(e, cont) {
     $.get(`/deleteNote/${cont}`);
     window.location.reload(false);
 }
+
+function goBack() {
+    window.history.back();
+}
