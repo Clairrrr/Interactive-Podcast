@@ -22,6 +22,10 @@ exports.home_login = function(req, res){
     res.json(req.query.uname);
 };
 
+exports.signup = function(req, res){
+  res.render('signup');
+};
+
 
 
 
