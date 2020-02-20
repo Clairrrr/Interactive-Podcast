@@ -19,25 +19,27 @@
 </head>
 <body>
 <!-- this is a comment in HTML -->
-<div class="container">
-    <button class="backbutton" onclick="goBack()"> Back </button>
-    <div class="jumbotron">
-        <p class="title">{{courseName}}</p>
-    </div>
-    <div>
-        {{#each weeks}}
-            <p class="weeks">{{name}}</p>
-            <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
-            <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
-        {{/each}}
-    </div>
-    <br>
+<div class="container coursePage">
+    <a id="backbutton">back</a>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/index.js"></script>
+<div class="jumbotron">
+    <p class="title">{{courseName}}</p>
+</div>
+<div>
+    {{#each weeks}}
+        <p class="weeks">{{name}}</p>
+        <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
+        <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
+    {{/each}}
+</div>
+<br>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
 
 </body>
 </html>
