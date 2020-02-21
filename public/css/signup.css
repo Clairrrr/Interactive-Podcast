@@ -1,32 +1,27 @@
-
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid white;}
 
-
-
-#welcome_login{
-  color: Grey;
-  margin: 2px 20px;
+/*
+ center the image
+*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-
-#notecast {
-    text-align: left;
-    margin: 30px 15px 1px;
+#welcome_to_notecast{
+  margin:20px 20px 2px;
+  text-align: left;
     tab-size: 4;
     font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    letter-spacing: 0;
+    font-size: 23px;
+    letter-spacing: 0px;
     line-height: 1.2;
     font-weight: 700;
     font-style: normal;
 }
-
-#login_sub{
-  margin: 20px 20px 5px;
-
-}
-
 
 .label_style {
     display: inline-block;
@@ -37,6 +32,22 @@ form {border: 3px solid white;}
     font-weight: 400;
     font-style: normal;
 }
+
+
+.same_box_style{
+	color: rgba(0, 0, 0, 0.44);
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -61,7 +72,6 @@ button {
   width: 100%;
   border-radius: 15px;
 }
-
 
 button:hover {
   opacity: 0.8;
@@ -102,5 +112,3 @@ span.psw {
      width: 100%;
   }
 }
-
-

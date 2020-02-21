@@ -9,6 +9,15 @@
     color: #CC00AA;
 }
 
+
+#backbutton { 
+margin: 0px 15px;
+    position: absolute;
+    font-family: Roboto;
+    
+}
+
+
 body {
     margin-top: 6%;
 }
@@ -19,12 +28,12 @@ body {
 }
 
 .jumbotron {
-    position: relative;
-    padding-top: 2px;
-    padding-bottom: 0px;
-    margin-bottom: 16px;
-    padding-left: 2px;
-    background: none;
+    padding: 10px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: white;
 }
 
 .jumbotron:after {
@@ -59,7 +68,7 @@ body {
 
 #course_title2 {
     float: left;
-    margin-right: 60%;
+    margin-right: 30%;
 }
 
 #course_subtitle1 {

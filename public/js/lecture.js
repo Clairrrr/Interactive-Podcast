@@ -1,5 +1,5 @@
 'use strict';
-$(document).ready(function() {
+ jQuery(document).ready(function() {
     initializePage();
     console.log("A");
 });
@@ -44,4 +44,8 @@ function handleResume(e) {
 function handleDelete(e, cont) {
     $.get(`/deleteNote/${cont}`);
     window.location.reload(false);
+}
+
+function goBack() {
+    window.history.back();
 }

@@ -10,6 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
     $("#loginForm").submit(handleLogin);
+	$("#SigninForm").submit(handleSignup);
 }
 
 function handleLogin(e) {
@@ -23,3 +24,21 @@ function handleLogin(e) {
 		},
 	});
 }
+
+function handleSignup(e) {
+	e.preventDefault();
+	$.ajax({
+		url: $("#SigninForm").attr('action'),
+		type: 'get',
+		data: $("#SigninForm").serialize(),
+		success: function (res) {
+			window.location.href = `/home/${res[0]}`;
+		},
+	});
+}
+
+function goBack() {
+	window.history.back();
+}
+
+

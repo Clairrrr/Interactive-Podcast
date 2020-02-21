@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Sign up page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/signup.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+<!-- FB login sdk -->
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
+</head>
+
+
+<body>
+	<div class="container">
+		<h2 id="welcome_to_notecast">Welcome to Notecast</h2>
+	</div>
+
+    <div class="container">
+		<img src="/images/login.png" class="center" width="30%">
+	</div>
+
+	    <div class="container">
+        <!--start of the sign in form-->
+		 <form action="/home" method="get" id="SigninForm">
+
+		  <div class="container">
+		    <label class="label_style" for="uname">Username</label>
+		    <input type="text"  name="uname" required>
+
+		    <label class="label_style" for="uname">University name</label>
+
+		    <div class="custom-select same_box_style">
+			  <select>
+			    <option value="0">Select School</option>
+			    <option value="1">UC San Diego</option>
+			    <option value="2">UC Berkeley</option>
+			    <option value="3">UC Irvine</option>
+			    <option value="4">Harvard University</option>
+			    <option value="5">Carnegie Mellon University</option>
+			  </select>
+			</div>
+
+		    <label class="label_style" for="uname">University e-mail address</label>
+		    <input type="text" placeholder="example@school.com" name="uname" id="uname" required>
+
+
+		    <label class="label_style" for="psw">Password</label>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
+
+		    <label class="label_style" for="psw">Confirm password</label>
+		    <input type="password" placeholder="Enter same password again" name="psw" required>
+
+		    <input type="checkbox" checked="checked" name="remember"> I agree to Terms of Use and Privacy Policy
+
+		    <!--10px padding manually added-->
+		    <div style="height:10px;"><br></div>
+
+		    <button id="loginButton" type="submit">Sign Up</button>
+
+		    <div style="height:10px;"><br></div>
+
+		    <p>I have an account already. <a href="/">Login now</a></p>
+		  
+		  </div>
+
+		  
+		</form>
+        <!--end of the login form-->
+	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
