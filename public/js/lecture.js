@@ -1,5 +1,5 @@
 'use strict';
-$(document).ready(function() {
+ jQuery(document).ready(function() {
     initializePage();
     console.log("A");
 });
