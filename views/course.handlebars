@@ -22,7 +22,7 @@
 <div id="courseBody">
     <!-- this is a comment in HTML -->
     <div class="container coursePage">
-        <a id="backbutton" onclick="goBack()">back</a>
+        <a id="backbutton" onclick="goBack()"> < Back</a>
     </div>
 
     <div style="height:10px;"><br></div>
@@ -33,8 +33,8 @@
     <div>
         {{#each weeks}}
             <div class="dropdown">
-                <button onclick="dropdown()" class="dropbtn">{{name}}</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="dropdown(`{{id}}`)" class="dropbtn">{{name}}</button>
+                <div class="dropdown-content" id={{id}}>
                     <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
                     <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
                 </div>

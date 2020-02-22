@@ -41,6 +41,7 @@ app.get('/', index.login);
 app.get('/signup', index.signup);
 app.get('/home', index.home_login);
 app.get('/home/:name', index.home);
+app.get('/profile/:name', index.profile);
 app.get('/home/course/:name/:quarter/:prof', course.viewCourse);
 app.get('/home/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
 app.get('/addNote/:courseName/:prof/:quarter/:lecture/:time', lecture.addNote);

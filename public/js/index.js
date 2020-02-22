@@ -59,8 +59,9 @@ function openTab(e, b) {
 	// evt.currentTarget.className += " active";
 }
 
-function dropdown() {
-	document.getElementById("myDropdown").classList.toggle("show");
+function dropdown(id) {
+	document.getElementById(id).classList.toggle("show");
+	// document.getElementById(id).style.display ="block";
 }
 
 

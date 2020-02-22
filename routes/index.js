@@ -26,6 +26,12 @@ exports.signup = function(req, res){
   res.render('signup');
 };
 
+exports.profile = function(req, res){
+  var info = {}
+  info['name'] = req.params.name;
+  res.render('profile', info);
+};
+
 
 
 
