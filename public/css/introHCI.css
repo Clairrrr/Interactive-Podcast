@@ -10,11 +10,10 @@
 }
 
 
-#backbutton { 
-margin: 0px 15px;
+#backbutton {
+    margin: 0px 15px;
     position: absolute;
     font-family: Roboto;
-    
 }
 
 
@@ -72,14 +71,10 @@ body {
 }
 
 #course_subtitle1 {
-    padding-top: 20%;
 }
 
 #course_subtitle2 {
-    margin-top: 15%;
     font-weight: 700;
-    float: left;
-    text-align: left
 }
 
 .title {
@@ -100,18 +95,20 @@ body {
 }
 
 .videoPreview {
-    width: 45%;
+    width: 80%;
     border: #cfcfcf 1.25px solid;
     border-radius: 6px;
+    margin-left: 10%;
 }
 
 .videoDescription p{
-    padding-top: 1%;
+    padding-top: 4%;
     padding-left: 1%;
+    text-align: center;
 }
 
 .video {
-    width: 45em
+    float: center;
 }
 
 .podcastVideo {
@@ -186,6 +183,7 @@ body {
     border: 1px solid #cfcfcf;
     border-radius: 12px;
     margin-bottom: 5%;
+    margin-top: 32%;
     height: 3em;
     padding-top:0.5em;
     padding-left: 1em;
@@ -196,8 +194,4 @@ body {
 .deleteNote {
     float: right;
     padding-right: 0.7em;
-}
-
-.recently_viewed {
-    margin-top: 40%;
 }

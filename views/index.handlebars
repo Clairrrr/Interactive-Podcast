@@ -12,7 +12,8 @@
 	
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 
 </head>
 
@@ -21,9 +22,6 @@
 
 <body>
 
-<!-- FB login sdk -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=521605325153752&autoLogAppEvents=1"></script>
 
 
 
@@ -61,7 +59,8 @@
 		    </label>
 		    <div style="height:20px;"><br></div>
 		  
-				<div class="fb-login-button" width="100%"  data-size="large" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
 
 
 			<div style="height:10px;"><br></div>

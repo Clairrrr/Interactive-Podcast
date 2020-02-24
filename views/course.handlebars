@@ -9,6 +9,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/introHCI.css" rel="stylesheet">
+    <link href="/css/course.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,25 +19,30 @@
     <![endif]-->
 </head>
 <body>
-<!-- this is a comment in HTML -->
-<div class="container coursePage">
-    <a id="backbutton" onclick="goBack()">back</a>
-</div>
+<div id="courseBody">
+    <!-- this is a comment in HTML -->
+    <div class="container coursePage">
+        <a id="backbutton" onclick="goBack()"> < Back</a>
+    </div>
 
- <div style="height:10px;"><br></div>
+    <div style="height:10px;"><br></div>
 
-<div class="jumbotron">
-    <p class="title">{{courseName}}</p>
+    <div class="jumbotron">
+        <p class="title">{{courseName}}</p>
+    </div>
+    <div>
+        {{#each weeks}}
+            <div class="dropdown">
+                <button onclick="dropdown(`{{id}}`)" class="dropbtn">{{name}}</button>
+                <div class="dropdown-content" id={{id}}>
+                    <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
+                    <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <br>
 </div>
-<div>
-    {{#each weeks}}
-        <p class="weeks">{{name}}</p>
-        <a href="{{name}}/{{lecture1}}/{{prof}}" class="lectures">{{lecture1}}</a><br>
-        <a href="{{name}}/{{lecture2}}/{{prof}}" class="lectures">{{lecture2}}</a>
-    {{/each}}
-</div>
-<br>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
