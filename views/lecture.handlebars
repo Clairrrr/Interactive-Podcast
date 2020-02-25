@@ -22,8 +22,9 @@
 <!-- this is a comment in HTML -->
 <div class="container" style="background: #F2F7FF;margin-top: -22.5px;padding-top: 22.5px;">
     <!-- <button class="backbutton" > Back </button>-->
-    <a id="backbutton" onclick="goBack()"> < Back</a>
-     <div style="height:10px;"><br></div>
+<!--    <a id="backbutton" onclick="goBack()"> < Back</a>-->
+    {{> user}}
+    <div style="height:10px;"><br></div>
     <div class="jumbotron" style="margin: 0px;background: #F2F7FF;">
         <p class="title" style="line-height: 1">{{courseName}}</p>
         <p class="info"> Professor {{prof}} | {{quarter}}</p>
