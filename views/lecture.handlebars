@@ -6,8 +6,10 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/introHCI.css" rel="stylesheet">
+    <link href="/css/lecture.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--import Nunito Fonts yz-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,15 +20,16 @@
 </head>
 <body>
 <!-- this is a comment in HTML -->
-<div class="container">
-    <!--        <button class="backbutton" > Back </button>-->
+<div class="container" style="background: #F2F7FF;margin-top: -22.5px;padding-top: 22.5px;">
+    <!-- <button class="backbutton" > Back </button>-->
     <a id="backbutton" onclick="goBack()"> < Back</a>
      <div style="height:10px;"><br></div>
-    <div class="jumbotron" style="margin: 0px;">
-        <p class="title">{{courseName}}</p>
+    <div class="jumbotron" style="margin: 0px;background: #F2F7FF;">
+        <p class="title" style="line-height: 1">{{courseName}}</p>
         <p class="info"> Professor {{prof}} | {{quarter}}</p>
         <p class="subtitle">{{lecture}}</p>
     </div>
+</div><!--end of teh container-->
 
     <div id="frame">
         <!--<iframe id="videoID" class="podcastVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>-->
@@ -35,13 +38,15 @@
             <source src="/../images/mov_bbb.mp4" type="video/ogg">
             <!--Your browser does not support the video tag.-->
         </video><br>
+</div>
 
+<div class="container" >
         <form id="addNoteForm" class="input" role="form" method="get"
               action="/addNote/{{courseName}}/{{prof}}/{{quarter}}/{{lecture}}">
             <input type="text" class="inputBox" placeholder="Add notes here..." name="note">
             <input type="submit" value="Add" class="submit">
         </form>
-    </div>
+
     <h3 id="noteTitle">Notes</h3>
     <div id="notesdiv">
         {{#each notes}}

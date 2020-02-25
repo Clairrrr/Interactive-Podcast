@@ -4,12 +4,16 @@
 <head>
     <title>Course</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-
+   
+    <link href="/css/course.css" rel="stylesheet">
+     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    
     <link href="/css/introHCI.css" rel="stylesheet">
-    <link href="/css/course.css" rel="stylesheet">
+    <!--import Nunito Fonts yz-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+  
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,10 +29,10 @@
         <a id="backbutton" onclick="goBack()"> < Back</a>
     </div>
 
-    <div style="height:10px;"><br></div>
+    <div style=" height: 10px;margin-top: -22.5px;background-color: aliceblue;padding-top: 22.5px;"><br></div>
 
-    <div class="jumbotron">
-        <p class="title">{{courseName}}</p>
+    <div class="jumbotron" style="background-color: aliceblue;margin: 30px 30px 0px;">
+        <p class="course_title">{{courseName}}</p>
     </div>
     <div>
         {{#each weeks}}

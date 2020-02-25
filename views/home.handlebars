@@ -10,6 +10,8 @@
     <link href="/css/introHCI.css" rel="stylesheet">
     <link href="/css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--import Nunito Fonts yz-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -27,11 +29,11 @@
         <a href="/profile/{{name}}"><p id="user_name">{{name}}</p></a>
     </div>
 
-    <div class="tight_text">
-        <h1 id="course_title1">Notescast</h1>
+    <div class="container">
+        <h2 id="notecast" style="margin-bottom: 0px; margin-top: 30px">NotesCast</h2>
     </div>
     <div class="tight_text">
-        <p id="course_title2">Podcast with smart notes</p>
+        <p style="text-align:center;">Hi, {{name}}!</p>
     </div>
     <div id="search">
         <input id="searchBar" type="text" placeholder="Search for your class..">
@@ -39,31 +41,42 @@
     </div>
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, true)" id="courseB">Course</button>
-        <button class="tablinks" onclick="openTab(event, false)" id="recentB">Recently Viewed</button>
+        <button class="tablinks" onclick="openTab(event, true)" id="courseB" style="font-family: Nunito;font-size: 20px">Course</button>
+        <button class="tablinks" onclick="openTab(event, false)" id="recentB" style="font-family: Nunito;font-size: 20px">Recently Viewed</button>
     </div>
+</div>
 
+
+
+<div style="margin:0px; padding:0px; width:100%;background: #F2F7FF;border-radius: 41px;">
     <div class="courses tabcontent" id="coursesTab">
         {{#each courses}}
-            <div class="class" id="{{id}}">
+            <div class="class" style="margin:15px" id="{{id}}">
                 <a href="course/{{name}}/{{quarter}}/{{prof}}" class="thumbnail">
-                    <p>{{name}}</p>
+                    <p style="font-family: Nunito;font-style: normal;font-weight: bold;font-size: 14px;ine-height: 19px;color: #000000;">{{name}}</p>
                 </a>
             </div>
         {{/each}}
-    </div>
 
+    </div>
+</div><!--end of the blue box-->
+
+<div style="margin:0px; padding:0px; width:100%;background: #F2F7FF;border-radius: 41px;">
     <div class="recently_viewed tabcontent" id="recentlyTab">
         {{#each videos}}
+          <div class="recent_box clearfix">
             <div class="video" id="{{id}}">
                 <a href="course/COGS 170-Interactive Design-LE[A00]/WI2020/Week 2/lecture 4 01-09-2020/Klemmer, Scott R" class="videoDescription">
                     <img class="videoPreview" src="/../images/{{image}}">
-                    <p>{{name}}<br>{{description}}</p>
+                    <p style="font-family: nunito;color: white;text-align: right;font-size: 15px;padding: 15px;margin: 0px;}">{{name}}<br>{{description}}</p>
                 </a>
             </div>
+        </div>
         {{/each}}
     </div>
-</div>
+
+</div><!--end of the blue box-->
+
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>

@@ -63,7 +63,7 @@ input[type=text], input[type=password] {
 
 
 button {
-  background-color: #0085FF;
+  background: linear-gradient(90deg, #0085FF 15.42%, #4247DD 84.27%);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

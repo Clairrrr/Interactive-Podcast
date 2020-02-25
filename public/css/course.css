@@ -51,3 +51,14 @@
 .show {display: block;}
 
 .hide {display: none;}
+
+.course_title{
+    font-family: Nunito;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+}
