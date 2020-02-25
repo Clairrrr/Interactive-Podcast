@@ -1,6 +1,6 @@
-var fs = require('fs');
 var data = require('../data');
-var user = require('../user');
+
+var name;
 
 exports.login = function(req, res){
   res.render('index');
@@ -18,11 +18,7 @@ exports.home_login = function(req, res){
   temp['name'] = req.query.uname;
   console.log("handle login!");
 
-  var temp2 = {};
-  temp2['name'] = req.query.uname;
-  var json = JSON.stringify(temp2);
-  console.log(json);
-  fs.writeFileSync('user.json', json);
+  name = req.query.uname;
 
   // res.render('home', temp);
     res.json(req.query.uname);
@@ -33,8 +29,8 @@ exports.signup = function(req, res){
 };
 
 exports.profile = function(req, res){
-  var info = {}
-  info['name'] = user['name'];
+  var info = {};
+  info['name'] = name;
   res.render('profile', info);
 };
 
