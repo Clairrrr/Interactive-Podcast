@@ -7,6 +7,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/lecture.css" rel="stylesheet">
+    <!--import fa fa icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--import Nunito Fonts yz-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
@@ -24,8 +25,8 @@
     <!-- <button class="backbutton" > Back </button>-->
 <!--    <a id="backbutton" onclick="goBack()"> < Back</a>-->
     {{> user}}
-    <div style="height:10px;"><br></div>
-    <div class="jumbotron" style="margin: 0px;background: #F2F7FF;">
+
+    <div id="lecture_head_box" style="margin: 0px;background: #F2F7FF;">
         <p class="title" style="line-height: 1">{{courseName}}</p>
         <p class="info"> Professor {{prof}} | {{quarter}}</p>
         <p class="subtitle">{{lecture}}</p>
@@ -48,7 +49,8 @@
             <input type="submit" value="Add" class="submit">
         </form>
 
-    <h3 id="noteTitle">Notes</h3>
+    <h3 id="noteTitle"><i class="fa fa-gradient">&#xf017;</i> Notes</h3>
+    <hr style="margin:10px">
     <div id="notesdiv">
         {{#each notes}}
             <div class="note">

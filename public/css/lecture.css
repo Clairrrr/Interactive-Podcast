@@ -90,7 +90,6 @@ body {
 }
 
 .title {
-    margin-top: 20px;
     width: 100%;
     font-family: Nunito;
 font-style: normal;
@@ -115,6 +114,7 @@ display: flex;
 align-items: center;
 letter-spacing: 0.07px;
 color: #000000;
+margin:0px;
 }
 
 .video {
@@ -212,7 +212,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 25px;
 /* or 179% */
-
+margin:0px;
 display: flex;
 align-items: center;
 letter-spacing: 0.07px;
@@ -244,3 +244,25 @@ color: #000000;}
 .recently_viewed {
     margin-top: 40%;
 }
+
+
+#lecture_head_box{
+    /* padding: 10px; */
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    /* background-color: white; */
+    padding: 5px 30px;
+    margin: 0px;
+    background: #F2F7FF;
+}
+
+
+/*add gradient to the fa icon yz */
+.fa-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0085FF), to(#4247DD));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
