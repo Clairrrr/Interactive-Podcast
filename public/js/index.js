@@ -5,6 +5,7 @@ $(document).ready(function() {
 	initializePage();
 	var link = document.getElementById('courseB');
 	link.focus();
+	// $("#search").submit(handleSearch);
 });
 
 /*
@@ -61,7 +62,12 @@ function openTab(e, b) {
 
 function dropdown(id) {
 	document.getElementById(id).classList.toggle("show");
-	// document.getElementById(id).style.display ="block";
+}
+
+function handleSearch() {
+	var cont = document.getElementById("searchBar").value;
+	window.location.href = `/search/${cont}`;
+
 }
 
 

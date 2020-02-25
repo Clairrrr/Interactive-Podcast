@@ -8,7 +8,6 @@ exports.login = function(req, res){
 
 exports.home = function(req, res){
   var temp = data;
-  console.log("here!");
   temp['name'] = req.params.name;
   res.render('home', temp);
 };
@@ -16,12 +15,10 @@ exports.home = function(req, res){
 exports.home_login = function(req, res){
   var temp = data;
   temp['name'] = req.query.uname;
-  console.log("handle login!");
 
   name = req.query.uname;
 
-  // res.render('home', temp);
-    res.json(req.query.uname);
+  res.json(req.query.uname);
 };
 
 exports.signup = function(req, res){
@@ -34,6 +31,18 @@ exports.profile = function(req, res){
   res.render('profile', info);
 };
 
+exports.search = function(req, res){
+  var cont = req.params.cont;
+  var oldData = data['courses'];
+  var newData = {};
+  newData['courses'] = [];
+  for(var i=0; i<oldData.length; i++){
+    if(((oldData[i].number).toLowerCase()).localeCompare(cont.toLowerCase()) === 0){
+      newData['courses'].push(oldData[i]);
+    }
+  }
+  res.render('home', newData);
+};
 
 
 

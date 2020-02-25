@@ -23,7 +23,6 @@ function handleAddNote(e) {
             $("#notesdiv").append(generateHTML(res, time));
         }
     });
-    e.preventDefault();
     window.location.reload(false);
 };
 
