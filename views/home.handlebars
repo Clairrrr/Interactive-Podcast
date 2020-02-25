@@ -22,9 +22,7 @@
 
 <body>
 <div class="container coursePage">
-
     {{> user}}
-
     <div class="container">
         <h2 id="notecast" style="margin-bottom: 0px; margin-top: 30px">NotesCast</h2>
     </div>
@@ -33,9 +31,16 @@
     </div>
     <div id="search">
         <input id="searchBar" type="text" placeholder="Search for your class..">
-        <a href="JavaScript:void(0);"><i class="fa fa-fw fa-search"></i> </a>
+        <a id="searchIcon" onclick="handleSearch()"><i class="fa fa-fw fa-search"></i> </a>
     </div>
 
+<!--    <form id="search" class="input" role="form" method="get"-->
+<!--          action="/search">-->
+<!--        <input id="searchBar" type="text" placeholder="Search for your class.." name="content">-->
+<!--&lt;!&ndash;        <a type="submit" href="JavaScript:void(0);"><i class="fa fa-fw fa-search"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a type="submit"><i class="fa fa-fw fa-search"></i></a>&ndash;&gt;-->
+<!--        <input type="submit" value="" class="submit"><i class="fa fa-fw fa-search"></i>-->
+<!--    </form>-->
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, true)" id="courseB" style="font-family: Nunito;font-size: 20px">Course</button>
         <button class="tablinks" onclick="openTab(event, false)" id="recentB" style="font-family: Nunito;font-size: 20px">Recently Viewed</button>
