@@ -16,7 +16,7 @@
         <h2 id="notecast" style="margin-bottom: 0px; margin-top: 30px">NotesCast</h2>
     </div>
     <div class="tight_text">
-        <p style="text-align:center;">Hi, {{name}}!</p>
+        <p style="text-align:center;">Hi, {{page}}!</p>
     </div>
     <div id="search">
         <input id="searchBar" type="text" placeholder="Search for your class..">
@@ -24,11 +24,15 @@
     </div>
 
 
-{{> pageB}}
+    {{#if page}}
+        {{> pageB}}
+    {{else}}
+        {{> pageA}}
+    {{/if}}
 
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

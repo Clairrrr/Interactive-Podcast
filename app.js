@@ -37,15 +37,16 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.login);
+app.get('/:page', index.login);
+// app.get('/', index.login);
 app.get('/signup', index.signup);
-app.get('/home', index.home_login);
-app.get('/home/:name', index.home);
+app.get('/home/:page', index.home_login);
+app.get('/home/:page/:name', index.home);
 app.get('/profile', index.profile);
 // app.get('/search', index.login);
 app.get('/search/:cont', index.search);
-app.get('/:home/course/:name/:quarter/:prof', course.viewCourse);
-app.get('/:home/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
+app.get('/:home/:page/course/:name/:quarter/:prof', course.viewCourse);
+app.get('/:home/:page/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
 app.get('/addNote/:courseName/:prof/:quarter/:lecture/:time', lecture.addNote);
 app.get('/deleteNote/:content', lecture.deleteNote);
 

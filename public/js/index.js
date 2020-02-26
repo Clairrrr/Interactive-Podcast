@@ -23,7 +23,7 @@ function handleLogin(e) {
 		type: 'get',
 		data: $("#loginForm").serialize(),
 		success: function (res) {
-			window.location.href = `/home/${res}`;
+			window.location.href = `/home/${res.page}/${res.name}`;
 		},
 	});
 }
