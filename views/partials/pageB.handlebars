@@ -1,0 +1,44 @@
+
+<!--    <form id="search" class="input" role="form" method="get"-->
+<!--          action="/search">-->
+<!--        <input id="searchBar" type="text" placeholder="Search for your class.." name="content">-->
+<!--&lt;!&ndash;        <a type="submit" href="JavaScript:void(0);"><i class="fa fa-fw fa-search"></i> </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a type="submit"><i class="fa fa-fw fa-search"></i></a>&ndash;&gt;-->
+<!--        <input type="submit" value="" class="submit"><i class="fa fa-fw fa-search"></i>-->
+<!--    </form>-->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, true)" id="courseB" style="font-family: Nunito;font-size: 20px">Course</button>
+        <button class="tablinks" onclick="openTab(event, false)" id="recentB" style="font-family: Nunito;font-size: 20px">Recently Viewed</button>
+    </div>
+</div>
+
+
+
+<div style="margin:0px; padding:0px; width:100%;background: #F2F7FF;border-radius: 41px;">
+    <div class="courses tabcontent" id="coursesTab">
+        {{#each courses}}
+            <div class="class" style="margin:15px" id="{{id}}">
+                <a href="course/{{name}}/{{quarter}}/{{prof}}" class="thumbnail">
+                    <p style="font-family: Nunito;font-style: normal;font-weight: bold;font-size: 14px;ine-height: 19px;color: #000000;">{{name}}</p>
+                </a>
+            </div>
+        {{/each}}
+
+    </div>
+</div><!--end of the blue box-->
+
+<div style="margin:0px; padding:0px; width:100%;background: #F2F7FF;border-radius: 41px;">
+    <div class="recently_viewed tabcontent" id="recentlyTab">
+        {{#each videos}}
+          <div class="recent_box clearfix">
+            <div class="video" id="{{id}}">
+                <a href="course/COGS 170-Interactive Design-LE[A00]/WI2020/Week 2/lecture 4 01-09-2020/Klemmer, Scott R" class="videoDescription">
+                    <img class="videoPreview" src="/../images/{{image}}">
+                    <p style="font-family: nunito;color: white;text-align: right;font-size: 15px;padding: 15px;margin: 0px;}">{{name}}<br>{{description}}</p>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div><!--end of the blue box-->
