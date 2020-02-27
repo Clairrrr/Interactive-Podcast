@@ -2,6 +2,11 @@ var data = require('../data');
 var page;
 var name;
 
+exports.loginA = function(req, res){
+  page = 'pageA';
+  res.render('index', {"page": page});
+};
+
 exports.login = function(req, res){
   page = req.params.page;
   res.render('index', {"page": page});

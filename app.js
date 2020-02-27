@@ -37,6 +37,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
+app.get('/', index.loginA);
 app.get('/:page', index.login);
 // app.get('/', index.login);
 app.get('/signup', index.signup);
