@@ -12,6 +12,11 @@ exports.loginB = function(req, res){
   res.render('index', {"page": page});
 };
 
+exports.loginB = function(req, res){
+  page = 'pageB';
+  res.render('index', {"page": page});
+};
+
 exports.home = function(req, res){
   var temp = data;
   temp['name'] = req.params.name;

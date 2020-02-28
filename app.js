@@ -38,6 +38,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.loginA);
+app.get('/pageA', index.loginA);
 app.get('/pageB', index.loginB);
 app.get('/signup', index.signup);
 app.get('/home', index.home_login);
