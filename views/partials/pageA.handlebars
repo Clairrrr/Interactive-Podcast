@@ -1,0 +1,26 @@
+<div class="courses">
+        {{#each courses}}
+            <div class="class" id="{{id}}">
+                <a href="course/{{name}}/{{quarter}}/{{prof}}" class="thumbnail">
+                    <p>{{name}}</p>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+
+<div style="margin:30px">
+    <h4 id="course_subtitle2">Recently viewed</h4>
+    <div class="recently_viewed">
+ 
+        {{#each videos}}
+            <div class="video" id="{{id}}">
+                <a href="course/{{name}}/week/{{description}}" class="videoDescription">
+                    <img style="width: 200px;height: 140px;border: #cfcfcf 1.25px solid;" src="/../images/{{image}}">
+                    <p>{{name}}<br>{{description}}</p>
+                </a>
+            </div>
+            
+        {{/each}}
+    
+    </div>
+</div>

@@ -1,0 +1,64 @@
+#courseBody {
+    background-color: aliceblue;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+
+    border-bottom-style: solid;
+    border-bottom-color: #3dacd1;}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    width: 80%;
+    margin-left:10%;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.hide {display: none;}
+
+.course_title{
+    font-family: Nunito;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+
+}

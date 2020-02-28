@@ -10,6 +10,7 @@
 }
 
 
+
 #backbutton {
     /* margin: 0px 15px; */
     position: absolute;
@@ -20,6 +21,7 @@
     /* line-height: 49px; */
     /* text-align: center; */
     color: #0185FF;
+    margin-left: 15px;
 }
 
 
@@ -57,13 +59,11 @@ body {
 }
 
 .class a {
-    margin: 30px 20px;
     text-align: left;
     padding-top: 15px;
     padding-left: 15px;
     border-radius: 12px;
-    border-color: transparent;
-    box-shadow: none;
+    box-shadow: 0px 10px 30px rgba(70, 70, 70, 0.26);
 }
 
 #course1 {
@@ -79,22 +79,42 @@ body {
 }
 
 #course_subtitle1 {
+    padding-top: 20%;
 }
 
 #course_subtitle2 {
+    margin-top: 15%;
     font-weight: 700;
+    float: left;
+    text-align: left
 }
 
 .title {
-    font-weight: bold;
     width: 100%;
-    font-size: 95%;
+    font-family: Nunito;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 25px;
+/* or 104% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.07px;
+
+color: #000000;
 }
 
 .subtitle {
-    margin-left: 3.5px;
-    font-size: 80%;
-    font-weight: bold;
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.07px;
+color: #000000;
+margin:0px;
 }
 
 .video {
@@ -103,21 +123,18 @@ body {
 }
 
 .videoPreview {
-    width: 130px;
-    height: 80px;
-    /* border: #cfcfcf 1.25px solid; */
-    border-radius: 10px;
-    /* margin-left: 10%; */
-    float: left;
+    width: 45%;
+    border: #cfcfcf 1.25px solid;
+    border-radius: 6px;
+}
 
 .videoDescription p{
-    padding-top: 4%;
+    padding-top: 1%;
     padding-left: 1%;
-    text-align: center;
 }
 
 .video {
-    float: center;
+    width: 45em
 }
 
 .podcastVideo {
@@ -136,23 +153,33 @@ body {
 }
 
 .inputBox {
-    width: 85%;
+    width: 77.5%;
     padding-left: 2.5%;
     padding-top: 1.2%;
 }
 
 .submit {
-    width: 12%;
-    border:aliceblue;
+    width: 70px;
+    border: aliceblue;
     height: 2.5em;
-    border-radius:6px;
-    margin-top: 1%;
+    /* text-decoration-color: white; */
+    border-radius: 10px;
+    /* margin-top: 1%; */
+    font-family: Nunito;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background: #0185FF;
 }
 
 .input {
+    order-radius: 12px;
     height: 3em;
-    border: #cfcfcf solid 1.5px;
-    border-radius:6px;
+    vertical-align: baseline;
+    box-shadow: 0px 6px 20px #DDEAFF;
+    border-radius: 10px;
+    margin: 5px;
+
 }
 
 .note {
@@ -179,8 +206,18 @@ body {
 }
 
 .info {
-    font-size: 70%;
-}
+    font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+/* or 179% */
+margin:0px;
+display: flex;
+align-items: center;
+letter-spacing: 0.07px;
+
+color: #000000;}
 
 #searchBar {
     width: 90%;
@@ -192,15 +229,40 @@ body {
     border: 1px solid #cfcfcf;
     border-radius: 12px;
     margin-bottom: 5%;
-    margin-top: 32%;
     height: 3em;
-    padding-top: 0.5em;
+    padding-top:0.5em;
     padding-left: 1em;
-    /* box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.26); */
-    vertical-align: baseline;
+    box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.26);
+    vertical-align:baseline;
 }
 
 .deleteNote {
     float: right;
     padding-right: 0.7em;
 }
+
+.recently_viewed {
+    margin-top: 40%;
+}
+
+
+#lecture_head_box{
+    /* padding: 10px; */
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    /* background-color: white; */
+    padding: 5px 30px;
+    margin: 0px;
+    background: #F2F7FF;
+}
+
+
+/*add gradient to the fa icon yz */
+.fa-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0085FF), to(#4247DD));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

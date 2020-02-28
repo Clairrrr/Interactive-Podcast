@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>HCI Project Portfolio</title>
+    <link href="/css/introHCI.css" rel="stylesheet">
+    <link href="/css/profile.css" rel="stylesheet">
+    <link href="/css/signup.css" rel="stylesheet">
+    <![endif]-->
+{{> header}}
+
+</head>
+
+<body>
+<div class="container coursePage">
+<div style="height: 10px;/* margin-top: -22.5px; */background-color: TRANSPARENT;padding-top: 22.5px;"><br></div>
+    <a id="backbutton" onclick="goBack()"> < Back</a>
+
+    <div id="profile_blue_box">
+        <h1 id="profile_header"> Profile </h1>
+
+        <img id="profilePic" class="center" src="/../images/profilepic.png">
+    </div>
+
+    <a style="float: right;
+    margin-right: 15px;"> Edit</a>
+
+
+    <div class="container">
+        <label class="profile_label_style" for="uname">Username</label>
+        <div class="profile_box" >
+            <p class="pro">{{name}}</p>
+        </div>
+
+        <label class="profile_label_style" for="uname">University name</label>
+          <div class="profile_box" >
+            <p class="pro">University of California, San Diego</p>
+        </div>
+
+        <label class="profile_label_style" for="uname">University e-mail address</label>
+        <div class="profile_box" >
+            <p class="pro">wendy09@ucsd.edu</p>
+        </div>
+
+        <!--10px padding manually added-->
+        <div style="height:10px;"><br></div>
+
+
+        <div style="height:10px;"><br></div>
+
+        <a href="/" style="margin-left: 15px">Log out</a>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
