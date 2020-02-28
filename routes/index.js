@@ -7,13 +7,12 @@ exports.loginA = function(req, res){
   res.render('index', {"page": page});
 };
 
-exports.login = function(req, res){
-  page = req.params.page;
+exports.loginB = function(req, res){
+  page = 'pageB';
   res.render('index', {"page": page});
 };
 
 exports.home = function(req, res){
-  console.log("there");
   var temp = data;
   temp['name'] = req.params.name;
   if(page.localeCompare("pageA") === 0) temp['page'] = false;
@@ -23,12 +22,10 @@ exports.home = function(req, res){
 
 exports.home_login = function(req, res){
   var temp = data;
-  temp['name'] = req.query.uname;
-  // temp['page'] = req.params.name.localeCompare('A') === 0;
   name = req.query.uname;
+  temp['name'] = name;
 
-  console.log("here");
-  res.json({'name': req.query.uname, 'page': page});
+  res.json({'name': req.query.uname});
 };
 
 exports.signup = function(req, res){
