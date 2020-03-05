@@ -43,6 +43,8 @@ exports.profile = function(req, res){
   info['name'] = name;
   info['email'] = email;
   info['school'] = school;
+  if(email == null) info['set'] = false;
+  else info['set'] = true;
   res.render('profile', info);
 };
 
