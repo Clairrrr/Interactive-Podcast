@@ -1,6 +1,8 @@
 var data = require('../data');
 var page;
 var name;
+var school;
+var email;
 
 exports.loginA = function(req, res){
   page = 'pageA';
@@ -26,11 +28,10 @@ exports.home = function(req, res){
 };
 
 exports.home_login = function(req, res){
-  var temp = data;
   name = req.query.uname;
-  temp['name'] = name;
-
-  res.json({'name': req.query.uname});
+  email = req.query.email;
+  school = req.query.school;
+  res.json({'name': name, 'email': email});
 };
 
 exports.signup = function(req, res){
@@ -40,6 +41,8 @@ exports.signup = function(req, res){
 exports.profile = function(req, res){
   var info = {};
   info['name'] = name;
+  info['email'] = email;
+  info['school'] = school;
   res.render('profile', info);
 };
 

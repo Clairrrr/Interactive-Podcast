@@ -35,7 +35,7 @@ function handleSignup(e) {
 		type: 'get',
 		data: $("#SigninForm").serialize(),
 		success: function (res) {
-			window.location.href = `/home/${res[0]}`;
+			window.location.href = `/home/${res.name}`;
 		},
 	});
 }
