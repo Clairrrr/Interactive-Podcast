@@ -12,7 +12,9 @@ exports.addNote = function (req, res) {
     var note = req.query.note;
     data['notes'][note] = req.params.time;
     var json = JSON.stringify(data);
-    fs.writeFile('data.json', json);
+    fs.writeFile('data.json', json, function () {
+        
+    });
     res.json(note);
     lecture.viewLecture(req, res);
 };

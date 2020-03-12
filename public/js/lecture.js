@@ -23,7 +23,7 @@ function handleAddNote(e) {
             $("#notesdiv").append(generateHTML(res, time));
         }
     });
-    window.location.reload(false);
+    // window.location.reload(false);
 };
 
 function generateHTML(note, time) {
@@ -40,7 +40,7 @@ function handleResume(e) {
     vid.currentTime = parseInt(time[0])*3600 + parseInt(time[1])*60 + parseInt(time[2]);
 }
 
-function handleDelete(e, cont) {
+function handleDelete(cont) {
     $.get(`/deleteNote/${cont}`);
     window.location.reload(false);
 }
