@@ -23,7 +23,7 @@ function handleAddNote(e) {
             $("#notesdiv").append(generateHTML(res, time));
         }
     });
-    // window.location.reload(false);
+     window.location.reload(false);
 };
 
 function generateHTML(note, time) {
